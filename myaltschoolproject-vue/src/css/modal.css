@@ -1,0 +1,75 @@
+/* Modal overlay to cover the whole screen */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the modal is above other content */
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title of the modal */
+  .modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Input field for adding the todo */
+  .modal-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Container for buttons */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Button styles */
+  .modal-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .modal-button-primary {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .modal-button-primary:hover {
+    background-color: #45a049;
+  }
+  
+  .modal-button-secondary {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .modal-button-secondary:hover {
+    background-color: #e53935;
+  }
+  
